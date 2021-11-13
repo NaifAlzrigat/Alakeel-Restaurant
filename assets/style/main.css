@@ -1,0 +1,401 @@
+/* ***General style*** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Almarai", sans-serif;
+  color: #0e0c34;
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: #82818a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a2de69;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ***Utilites*** */
+.btn {
+  background-color: #a2de69;
+  color: #0e0c34;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #92af77;
+  color: #fff;
+}
+
+.btn-small {
+  background: #dedede;
+  font-size: 0.75rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn-small.active {
+  background: #a2de69;
+  color: #fff;
+}
+
+.contaner {
+  /* background: #aa6060; */
+  width: 960px;
+  margin: 0 auto;
+}
+/*  */
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.col-1-2,
+.col-1-3,
+.col-1-4 {
+  /* float: right; */
+  /* border: 2px solid black; */
+
+}
+
+.clear {
+  clear: both;
+}
+
+.col-1-2 {
+  flex-basis: calc(100%/2);
+}
+.col-1-3 {
+  flex-basis: calc(100%/3);
+}
+.col-1-4 {
+  flex-basis: calc(100%/4);
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
+/* ***header*** */
+
+header {
+  padding: 1rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar {
+  display: inline-block;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img {
+  height: 2rem;
+  margin: 0 0 -0.5rem 0.25rem;
+}
+.navbar li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.navbar li .active {
+  color: #a2de69;
+}
+
+/* ***head*** */
+.head-image {
+  width: 80%;
+  margin-right: 20%;
+}
+
+.head-info {
+  padding-top: 5rem;
+}
+
+.head-info h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.head-info .sub-header {
+  color: #a2de69;
+  font-size: 1.5rem;
+}
+
+.head-info .sub-text {
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* ***advantages*** */
+
+#advantages {
+  background-color: #f5f9f4;
+}
+
+#advantages .contaner h2 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+#advantages .col-1-3 {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#advantages .col-1-3 img {
+  height: 4rem;
+}
+
+#advantages .col-1-3 h3 {
+  margin: 1rem 0;
+}
+#advantages .col-1-3 p {
+  color: #82818a;
+}
+
+/* ***menu*** */
+#menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-filters .filters {
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+
+.menu-products .product {
+  margin: 0.5rem;
+  border: 2px dashed #a2de69;
+  border-radius: 40px;
+  overflow: hidden;
+  height: 15rem;
+  position: relative;
+}
+.menu-products .product img {
+  width: 100%;
+  position: absolute;
+}
+.menu-products .product .product-info {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.product-info h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.product-info span {
+  color: #a2de69;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.product-btn {
+  font-size: 2rem;
+  position: absolute;
+  left: 1rem;
+  background-color: #a2de69;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product-btn:hover {
+  background-color: #8bbd81;
+}
+
+/* ***menu*** */
+
+#cta .book {
+  background-color: aqua;
+  border-radius: 40px;
+  background-image: url("../images/reservation.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+#cta .book .book-box {
+  background-color: hsla(110, 31%, 62%, 0.9);
+  width: 50%;
+  border-radius: 40px;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+#cta .book .book-box h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#cta .book .book-box .form-group {
+  display: inline-block;
+  margin: 0 0.9rem;
+}
+.form-group label {
+  display: block;
+  text-align: right;
+}
+.form-group input,
+select {
+  border: 1.5px dashed #fff;
+  outline: none;
+  font-weight: 800;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 3px;
+}
+.form-group select {
+  padding: 0.2rem;
+}
+.form-group select option {
+  color: #000;
+}
+#cta .book .book-box form button {
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+/* ***reviews*** */
+#reviews {
+  background-color: #f5f5f5;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+#reviews .review {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+#reviews .review .info {
+  margin-bottom: 1rem;
+}
+#reviews .review .info img {
+  width: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+#reviews .review .info .user-data {
+  margin-right: 1rem;
+  display: inline-block;
+}
+#reviews .review .info .user-data p {
+    color: #82818a;
+}
+
+#reviews .review .stars {
+  text-align: left;
+  margin-top: 1rem;
+}
+#reviews .review .stars img {
+  width: 1.5rem;
+}
+.justify-content{
+  justify-content: center;
+}
+#reviews .three-dots {
+  text-align: center;
+}
+#reviews .three-dots span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #dedede;
+  margin: 0 0.25rem;
+  cursor: pointer;
+
+}
+#reviews .three-dots .active {
+  cursor: pointer;
+  background-color: #a2de69;
+}
+
+
+/* ***contact*** */
+#contact .contact-box{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    border: 2px dashed #a2de69;
+    padding: 2rem;
+    position: relative;
+}
+#contact .contact-box .contact-info{
+    width: 70%;
+    display: inline-block;
+}
+#contact .contact-box .contact-cta{
+    display: inline-block;
+    position: absolute;
+    left: 0.5rem;
+    top: 5.5rem;
+}
+#contact .contact-box .contact-info p{
+    margin-top:1rem ;
+    color: #82818a;
+    
+}
+
+/* ***footer*** */
+footer .social-links{
+    margin-top: 1.5rem;
+}
+footer .social-links a{
+    margin-left: 0.75rem;
+}
+footer .social-links img{
+    height: 1.5rem;
+}
+
+.col-1-4 h3{
+margin-bottom: 1rem;
+}
+
+.footer-copy{
+    background-color:#f5f5f5;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #82818a;
+}
